@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div {
+            border: 1px solid black;
+        }
+
+        .container {
+            position: relative;
+            height:2000px;
+            background-color: rgb(183, 128, 128);
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .image2 {
+            /* position: relative;  gap hamesha rhega
+            top: 200px;
+            left: ; */
+
+            /* position: absolute;   gap nhi rhega , uska aange wala uss number pr chla aayega
+            top: 200px; */
+
+        }
+
+        .image4 {
+            position: fixed;
+        }
+        .box {
+            height: 2000px;
+            background-color: aquamarine;
+        }
+        .image3 {
+            position: sticky;
+            top: 100px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="image1.jpg" alt="image1" width="300px" class="image1">
+        <img src="image2.jpg" width="300px" class="image2">
+        <img src="image3.jpg" width="300px" class="image3">
+        <img src="image4.jpg" width="300px" class="image4">
+    </div>
+    <div class="box"></div>
+</body>
+
+</html>
