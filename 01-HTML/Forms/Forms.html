@@ -1,0 +1,165 @@
+<!-- Forms -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            background: url(pexels-andreea-ch-371539-1166644.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #background {
+              background-image: url(group-students-throwing-books-air.jpg);
+              text-align: center;
+        }
+        #newform {
+            margin-left: 400px;
+            margin-right: 400px;
+            font-weight: bold;
+            font-size: large;
+
+        }
+        #form2 {
+            font-weight: bold;
+            margin-left: 400px;
+            margin-right: 400px;
+            text-align: center;
+        }
+        #Questions{
+            text-align: center;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+    </style>
+
+ </head>
+ 
+ <body>
+
+    <!-- ===============Student EXAM FORM======================= -->
+    <div id="background">
+
+        <h1 style="text-align: center;"><b>STUDENT EXAM FORM</b></h1>
+
+        <form id="newform">
+            <fieldset>
+
+                  <legend><b>STUDENT DETAILS </b></legend> <!--caption-->
+
+            
+            <br>
+
+            <label for="name">Student's Name: </label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+
+            <br><br>
+
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" placeholder="Father's Name">
+
+            <br><br>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob">
+
+            <br>
+            
+            <p>Gender: 
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            </p>
+
+            <label for="phone">Your Phone Number: </label>
+            <input type="number" id="phone" min="10" max="10" placeholder="Phone">
+            
+            <br><br>
+
+            <label for="mail">Enter Your Mail:</label>
+            <input type="email" id="mail" placeholder="Enter Your Mail" required>
+
+            <br><br>
+
+            <label for="Docu">Upload Documents: </label>
+            <input type="file" id="Docu">
+
+            <br><br>
+
+            <label for="subject">Please Select Your subject:</label>
+            <select name="dishes" id="subject" required>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Biology">Biology</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+        
+            </select>
+            
+
+            <br><br>
+
+            <label for="password">Enter Password: </label>
+            <input type="password" id="password" placeholder="Enter Your Password" minlength="5" maxlength="10">
+            
+            <br><br><br>
+
+            <button>Submit Form</button>
+
+
+            </fieldset>
+
+
+            <!-- <img src="group-students-throwing-books-air.jpg" alt=""> -->
+            
+            
+        </form>
+    </div>
+
+    <br><br>
+    
+    <!-- ==========Exam Related Queries============= -->
+    <div>
+        <form id="form2">
+            <fieldset>
+                <legend><b>EXAM RELATED QUERIES:-</b></legend>
+
+                <h3><b>Contact Us:-</b></h3>
+                Phone Number :-<a href="tel:+918652356489">+918652356489</a>
+                <br><br>
+                Mail ID :- <a href="mailto:contact.kali@gmail.com">contact.kali@gmail.com</a>
+
+                <p>Enter Your Queries Here:-</p>
+
+                <textarea name="textarea" rows="10" cols="20" placeholder="Enter Your Queries"></textarea>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- =================Frequently Asked Questions================ -->
+     <br><br>
+     <div id="Questions">
+        <fieldset>
+            <legend><b>FREQUENTLY ASKED QUESTION:-</b></legend>
+            <details>
+                <summary>If Payment is not Successfull</summary>
+                <p>If your payment is not Successfull then please contact Kali Linux</p>
+            </details>
+
+            <details>
+                <summary>Document Size</summary>
+                <p>Your document size should be min 30kb and max-100kb</p>
+            </details>
+
+            <details>
+                <summary>Exam Form Last Date</summary>
+                <p>Exam form last date will be declare soon. Just be connect to Kali</p>
+            </details>
+        </fieldset>
+     </div>
+ </body>
+ </html>
