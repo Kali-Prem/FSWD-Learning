@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <!--============ INTERNAL CSS USED=========== -->
     <style>
         body {
             background: url(pexels-andreea-ch-371539-1166644.jpg);
@@ -15,8 +15,9 @@
             position: relative;
         }
         #background {
-              background-image: url(group-students-throwing-books-air.jpg);
+              
               text-align: center;
+              
         }
         #newform {
             margin-left: 400px;
@@ -36,6 +37,21 @@
             margin-left: 400px;
             margin-right: 400px;
         }
+        h1 {
+            border: 1px solid black;
+            margin-left: 550px;
+            margin-right: 550px;
+            border-radius: 20px;
+            background-color: lightpink;
+            
+        }
+        #fieldset1 {
+            background-color: lightblue;
+        }
+        #fieldset2 {
+            background-color: lightcyan;
+        }
+
     </style>
 
  </head>
@@ -48,7 +64,7 @@
         <h1 style="text-align: center;"><b>STUDENT EXAM FORM</b></h1>
 
         <form id="newform">
-            <fieldset>
+            <fieldset id="fieldset1">
 
                   <legend><b>STUDENT DETAILS </b></legend> <!--caption-->
 
@@ -75,18 +91,28 @@
             <input type="radio" name="gender">Female
             </p>
 
-            <label for="phone">Your Phone Number: </label>
-            <input type="number" id="phone" minlength="10" placeholder="Phone">
+            <label for="phone">Enter 10 digit phone Number: </label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="Phone">
             
             <br><br>
 
-            <label for="mail">Enter Your Mail:</label>
-            <input type="email" id="mail" placeholder="Enter Your Mail" required>
+            <label for="mail">Enter Your Mail ID:</label>
+            <input type="email" id="mail" name="email" placeholder="Enter Your Mail" required>
 
             <br><br>
 
-            <label for="Docu">Upload Documents: </label>
-            <input type="file" id="Docu">
+            <label for="docpiker">Upload Documents: </label>
+            <input type="file" id="docpiker" accept="image/*, audio/*, video/*, .pdf, .doc, .docx" multiple>
+            <!-- <input type="file" id="profile_pic" accept=".jpg, .jpeg, .png" /> -->
+            <br>
+
+            <label for="upload">File progress:</label>
+            <progress id="upload" max="100" value="70"></progress>
+
+            <br><br>
+
+            <label for="capture_pic">Capture:</label>
+            <input type="file" id="capture_pic" name="selfie" capture="user" accept="image/*">
 
             <br><br>
 
@@ -124,7 +150,7 @@
     <!-- ==========Exam Related Queries============= -->
     <div>
         <form id="form2">
-            <fieldset>
+            <fieldset id="fieldset2">
                 <legend><b>EXAM RELATED QUERIES:-</b></legend>
 
                 <h3><b>Contact Us:-</b></h3>
@@ -161,5 +187,6 @@
             </details>
         </fieldset>
      </div>
+     
  </body>
  </html>
