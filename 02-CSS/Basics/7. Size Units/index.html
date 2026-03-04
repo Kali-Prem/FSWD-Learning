@@ -70,16 +70,29 @@
       2em = 2 × 16px = 32px
       
       The paragraph text becomes 32px. */
-      body {
+      /* body {
         font-size: 32px;
 
       }
       p {
         font-size: 2em;
-        /* here 2em = 2*32=64px */
-      }
+         here 2em = 2*32=64px 
+      } */
+
+      /* ========Case 6 (rem-- depends upon root element) */
+      
+      /* here root elenbt is HTML and default size of root element is 16 px .
+         //means hum jo bhi web page pr hota hai uska default size 16px hota hai
+      */
+      /* p {
+        font-size: 2rem;
+        //here the font size of p will become 2*16px = 32 px finally
+      } */
+
+
     </style>
   </head>
+
   <body>
     <!-- case 1===== -->
 
@@ -105,7 +118,21 @@
         Kali Linux
     </div> -->
 
-    <!-- ======Case 5 ()======== -->
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate.</p>
+    <!-- ======Case 5 (em unit--depends upon parent element)======== -->
+     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate.</p> -->
+
+     <!-- Case 6 (rem unit-- depends upon root element)-->
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adit. Placeat commodi fuga vitae nobis dolores.</p> -->
+
   </body>
 </html>
+
+
+
+<!-- 
+================Note===============
+PPI = Pixel per inch
+1 px = 1/96 of inch
+dpi = dots per inch (used using printing)
+
+-->
