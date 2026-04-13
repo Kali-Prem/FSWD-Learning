@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 2000px;
+        height: 2000px;
+        background-color: lightblue;
+        position: relative; /* when we use position absolute in child element then parent element should be position relative. */
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* by default , position is static. but when position is relative, we can use left, right, top, bottom properties but gap will be maintained.
+          when position is absolute, the gap will not be maintained so next element will take tha position and gap will be fill. */
+      }
+      .img2 {
+        left: 50px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img1" src="./clouds-cloudy-countryside-236047.jpg" alt="" />
+      <img
+        class="img2"
+        src="./pexels-optical-chemist-340351297-30994370.jpg"
+        alt=""
+      />
+      <img class="img3" src="./pexels-steve-1070534.jpg" alt="" />
+    </div>
+  </body>
+</html>
