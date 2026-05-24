@@ -1,4 +1,8 @@
 {
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "markdown.preview.scrollEditorWithPreview": true
+    "markdown.preview.scrollEditorWithPreview": true,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "livePreview.defaultPreviewPath": "/02-CSS/Online-01/10. Media Query/index.html"
 }

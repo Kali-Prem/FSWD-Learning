@@ -1,0 +1,61 @@
+<!-- Shadow:- 
+ [box-shadow: x y blur spread color;]
+ x ko negative dene pr left side move krega aur positiove dene pr right side same for y
+
+ Note:- by default shadow ka color Black hota hai;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: lightblue;
+            width: 330px;
+            height: 330px;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            /* Applying shadow */
+            /* box-shadow: 20px 15px lightcoral; */
+
+            /* Box-shadow with blur radius */
+            /* box-shadow: 10px 15px 50px rgb(237, 10, 48); */
+
+            /* BOx shadow with spread radius */
+            /* box-shadow: 10px 15px 50px 20px rgb(239, 5, 44); */
+
+            /* box shadow - inset se ander ki taraf aayegi  */
+            /* box-shadow: inset 10px 15px lightpink; */
+
+            /* Multiple shadow adding */
+            box-shadow: 10px 15px 25px lightcoral, 20px 20px 25px lightseagreen;
+        
+        }
+        #head1 {
+            /* text-shadow: 2px 3px 3px white; */
+            text-shadow: white 2px 3px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="../../../02-CSS/CSS-CT/pexels-optical-chemist-340351297-30994370.jpg" height="200px" width="250px" alt="">
+            <h1 id="head1">Welcome in Hacking:</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, magni.</p>
+        </div>
+    </div>
+</body>
+</html>

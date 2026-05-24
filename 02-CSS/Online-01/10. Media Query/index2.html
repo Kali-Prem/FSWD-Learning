@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            display: flex;
+        }
+        .box {
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 3px;
+            padding: 3px;
+        }
+        .item {
+            border: 1px solid black;
+            margin: 3px;
+            height: 90px;
+        }
+        @media (max-width: 640px){
+            .container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+        </div>
+        <div class="box" id="box2">
+            <img src="../6. Position Property/image1.jpg" alt="" height="200px" width="200px">
+        </div>
+    </div>
+</body>
+</html>
