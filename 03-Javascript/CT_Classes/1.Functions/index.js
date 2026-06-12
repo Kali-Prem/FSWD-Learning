@@ -1,0 +1,1 @@
+// console.log()  == console ek objective hua and log() ek functions
