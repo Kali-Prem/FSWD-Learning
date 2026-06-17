@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            border: 1px solid black;
+            background-color: bisque;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 1fr 1fr;  //3 equals part me divide kr dega colums ko*/
+            /* grid-template-columns: repeat(3, 1fr); */
+
+            /* Screen choti hogi to automatically columns kam ho jayengi. */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            /* items ke bich space aa jayega */
+            gap: 20px;  
+            /* Rows creating */
+            grid-template-rows: 100px 100px 100px;
+
+        }
+        .items { 
+            border: 1px solid black;
+            
+        }
+        #box1 {
+            grid-column: span 3;
+            background-color: pink;
+        }
+        #box2 {
+            grid-row: span 3;
+            background-color: lightblue;
+        }
+        #box3 {
+            grid-column: span 2;
+        }
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 100px;
+        }
+        #box4 {
+            grid-row: span 2;
+        }
+        #box5 {
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="box1">Header</div>
+        <div class="items" id="box2">2</div>
+        <div class="items" id="box3">3</div>
+        <div class="items" id="box4">4</div>
+        <div class="items" id="box5">5</div>
+        <div class="items footer" id="box6">Footer</div>
+        <!-- <div>7</div> -->
+    </div>
+</body>
+</html>
